@@ -1,0 +1,25 @@
+<root>
+    <styles>
+        <include src="file://{resources}/layout/custom_game/talent_tree/talent_tree.css"/>
+    </styles>
+    <script>
+        var context = $.GetContextPanel();
+        var id = parseInt(context.id.replace("HeroTalent", ""));
+
+        function ShowTalentTooltip() {
+            context.Data().ShowTalentTooltip(id);
+        }
+
+        function HideTalentTooltip() {
+            context.Data().HideTalentTooltip(id);
+        }
+
+        function OnTalentClick() {
+            context.Data().OnTalentClick(id, context.BHasClass("disabled"));
+        }
+    </script>
+    <Panel class="TalentContainer disabled" hittest="true" onactivate="OnTalentClick()" onmouseover="ShowTalentTooltip()" onmouseout="HideTalentTooltip()">
+        <DOTAAbilityImage id="TalentImage" abilityname=""/>
+        <Label id="TalentLevel" text="-1 / -1"/>
+    </Panel>
+</root>

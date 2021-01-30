@@ -1,0 +1,78 @@
+""
+{
+	//Talents
+
+	"talent_bs_phys_1" 
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"bs/phys"
+		"MaxLevel"						"5"
+		"IsOnCastBar"					"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"50 100 150 200 250"
+			}
+		}
+		
+		"Modifiers"
+		{
+			"modifier_talent_bs_phys_1"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE"	"%damage"
+				}
+			}
+		}
+	}
+	
+	"talent_bs_mag_1" 
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"bs/mag"
+		"MaxLevel"						"5"
+		"IsOnCastBar"					"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"spell_amplify"			"10 20 30 40 50"
+			}
+		}
+		
+		"Modifiers"
+		{
+			"modifier_talent_bs_mag_1"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE"	"%spell_amplify"
+				}
+			}
+		}		
+	}	
+
+	//End Talents
+}

@@ -1,0 +1,32 @@
+"TalentTree"
+{
+	"Points" // points for level up
+	{
+		"min_level" "2" 	// min level for giving points
+		"max_level" "25" 	// max level for giving points
+		"amount"	"1" 	// points per level
+		"special_levels" 	// special cases of giving points (still respects min_level and max_level)
+		{
+			"3"	"35"
+		}
+	}
+	
+	// heroes talents
+	"npc_dota_hero_bloodseeker"
+	{
+		"Physical"
+		{
+			"0"	//level required
+			{
+				"1"   "talent_bs_phys_1"
+			}
+		}
+		"Magical"
+		{
+			"0"
+			{
+				"1"   "talent_bs_mag_1"
+			}
+		}
+	}
+}

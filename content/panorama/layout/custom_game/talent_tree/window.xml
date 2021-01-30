@@ -1,0 +1,21 @@
+<root>
+    <styles>
+        <include src="file://{resources}/layout/custom_game/talent_tree/talent_tree.css"/>
+    </styles>
+    <scripts>
+        <include src="file://{resources}/layout/custom_game/talent_tree/talent_tree.js"/>
+    </scripts>
+    <Button hittest="false" class="TalentTreeRoot" onactivate='OnTalentTreeWindowButtonClick()' oncontextmenu='OnTalentTreeWindowButtonClick()'>
+        <Panel hittest="true" id="TalentsWindowContainer" onactivate=''>
+            <Panel id="TalentTreeColumnsContainer"/>
+            <Label id="CurrentTalentPoints" text="#talent_tree_current_talent_points"/>
+            <Button id="TalentsResetButton" class="Button" onactivate='OnResetTalentsButtonClick()'>
+                <Label text="#talent_tree_reset_talents" />
+            </Button>
+        </Panel>
+        <Button hittest="true" id="TalentTreeWindowButton" onactivate='OnTalentTreeWindowButtonClick()'>
+            <Panel hittest="false" id="TalentTreeWindowButtonActiveImage" class="hide" />
+			<!--<Label text="#talent_tree_window_button" />-->
+        </Button>
+    </Button>
+</root>
