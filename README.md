@@ -1,5 +1,6 @@
 # Talent Tree
 For DotA 2 Custom Game developers.
+
 **Library by Kirill Zaharenko, simplified and improved by Roman Avondale(me)**
 
 ## Features
@@ -9,6 +10,8 @@ For DotA 2 Custom Game developers.
 * Points issuing can be customized for your needs.
 * 'Reset Talents' button can be disabled.
 * Talents can be used for modifying Lua abilities.
+
+![alt text](https://github.com/TheProma/talent_tree/blob/main/Screenshot_2.png?raw=true)
 
 ## Instalation
 ### Drop Files:
